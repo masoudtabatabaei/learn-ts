@@ -62,3 +62,21 @@ function undefinedFunc(input: number) :undefined {
 
 voidFuncType(100);
 undefinedFunc(200);
+
+// ----------------------------------------------------------------------
+
+
+function add2 (num1:number , num2:number , cf: (n:number) => number ) {
+  let result = +num1 + +num2;
+  cf(result);
+  return result;
+}
+
+function cfFunction(n) {
+  return n;
+}
+
+let combineValues: () => number;
+combineValues = add2(1,3 , cfFunction(80));
+
+console.log(combineValues);
