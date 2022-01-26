@@ -34,15 +34,31 @@ enum Role {ADMIN  , AUTHOR , OPERATOR};
 console.log(Role.AUTHOR);
 
 
-function concatenate(input1: number|string , input2: number|string) {
-  if(typeof input1 === "number" && typeof input2 === "number") {
-    return input1 + input2;
+type combNumberString = number | string;
+type justTwoValue = "as-text" | "as-number";
+
+function concatenate(input1: combNumberString , input2: combNumberString , resultConversion: justTwoValue) {
+  if(typeof input1 === "number" && typeof input2 === "number" || resultConversion === "as-number") {
+    return +input1 + +input2;
   } else {
     return input1.toString() + " " + input2.toString();
   }
 }
 
 
-console.log(concatenate(2,8));
-console.log(concatenate("salam" , "masoud"));
-console.log(concatenate(2 , "numbers"));
+console.log(concatenate(2,8 , "as-number"));
+console.log(concatenate("salam" , "masoud" , "as-text"));
+console.log(concatenate(2 , "numbers" , "as-text"));
+
+
+function voidFuncType(input:number):void {
+  console.log("value is: " + input);
+}
+
+function undefinedFunc(input: number) :undefined {
+  console.log("value is: " + input);
+  return;
+}
+
+voidFuncType(100);
+undefinedFunc(200);
