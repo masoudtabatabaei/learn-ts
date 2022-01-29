@@ -76,7 +76,7 @@ function cfFunction(n) {
   return n;
 }
 
-let combineValues: () => number;
+let combineValues: number;
 combineValues = add2(1,3 , cfFunction(80));
 
 console.log(combineValues);
