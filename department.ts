@@ -1,7 +1,7 @@
 class Department {
   employees : string[] = [];
 
-  constructor(id:String , public name: string) {}
+  constructor(public id:String , public name: string) {}
 
   describe(this: Department):void {
     console.log("Department is : " + this.name + " and ID: " + this.id);
