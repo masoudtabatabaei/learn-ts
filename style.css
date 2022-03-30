@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 40px auto;
+  color: #01a602;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+ul li {
+  padding: 8px 10px;
+  border: 1px solid #dddddd;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+ul li h4 {
+  color: #01a602;
+  margin: 0;
+  text-transform: capitalize;
+}
+ul li p {
+  color: #333;
+  margin: 8px 0 0;
+}
+
+header {
+  background: #eeeeee;
+  padding: 60px;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+header a {
+  text-align: center;
+  display: block;
+  color: #999;
+  margin-top: 40px;
+  font-size: 0.7em;
+}
+
+form {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+form label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #333;
+  margin: 16px 0 6px;
+}
+form input, form select {
+  padding: 6px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+}
+form .field {
+  display: inline-block;
+  margin: 0 10px;
+}
+form button {
+  color: white;
+  border: 0;
+  background: #01a602;
+  padding: 6px;
+  min-width: 80px;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=style.css.map */

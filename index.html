@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Logger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <h1>Finance Logger</h1>
+
+    <header>
+        <form class="new-item-form">
+            <div class="field">
+                <label>Type:</label>
+                <select id="type">
+                    <option value="invoice">Invoice</option>
+                    <option value="payment">Payment</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>To / From:</label>
+                <input type="text" id="tofrom">
+            </div>
+            <div class="field">
+                <label>Details:</label>
+                <input type="text" id="details">
+            </div>
+            <div class="field">
+                <label>Amount (£):</label>
+                <input type="number" id="amount">
+            </div>
+            <button>Add</button>
+        </form>
+    </header>
+
+    <!-- output list -->
+    <ul class="item-list">
+        <li>sds</li>
+        <li>sds</li>
+    </ul>
+</div>
+
+<script src='sandbox.js'></script>
+</body>
+</html>

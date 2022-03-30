@@ -1,0 +1,89 @@
+$green-color: #01a602;
+$gray-color: #eeeeee;
+
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 40px auto;
+  color: $green-color;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    padding: 8px 10px;
+    border: 1px solid #dddddd;
+    margin: 10px auto;
+    border-radius: 5px;
+
+    h4 {
+      color: $green-color;
+      margin: 0;
+      text-transform: capitalize;
+    }
+    p {
+      color: #333;
+      margin: 8px 0 0;
+    }
+  }
+}
+
+header {
+  background: $gray-color;
+  padding: 60px;
+  border-radius: 6px;
+  margin-top: 30px;
+
+  a {
+    text-align: center;
+    display: block;
+    color: #999;
+    margin-top: 40px;
+    font-size: 0.7em;
+  }
+}
+
+form {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #333;
+    margin: 16px 0 6px;
+  }
+
+  input, select {
+    padding: 6px;
+    border: 1px solid $gray-color;
+    border-radius: 4px;
+  }
+
+  .field {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  button {
+    color: white;
+    border: 0;
+    background: $green-color;
+    padding: 6px;
+    min-width: 80px;
+    border-radius: 4px;
+  }
+}
