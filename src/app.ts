@@ -22,7 +22,5 @@ form.addEventListener('submit' , (e:Event) => {
         doc = new Payment(...values);
     }
 
-    console.log(doc);
-
     listTemplate.render(doc , type.value , 'end');
 })
